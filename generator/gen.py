@@ -2,8 +2,8 @@
 
 ASCII portret se cita iz ascii_dark.txt i ascii_light.txt. Kad promijenis portrait.png,
 napravi ih ponovo (treba Pillow i numpy):
-    python ascii.py portrait.png 54 37 dark > ascii_dark.txt
-    python ascii.py portrait.png 54 37 light > ascii_light.txt
+    python ascii.py portrait.png 56 44 dark > ascii_dark.txt
+    python ascii.py portrait.png 56 44 light > ascii_light.txt
 
 GitHub statistika se cita uzivo preko GraphQL API-ja. Token se uzima iz GH_TOKEN,
 a lokalno iz `gh auth token`.
@@ -18,7 +18,7 @@ OUT = os.path.dirname(HERE)
 
 W = 60          # sirina desne kolone u znacima
 X_INFO = 430
-ASCII_COLS, ASCII_ROWS, ASCII_FS, ASCII_LH = 54, 37, 12, 15
+ASCII_COLS, ASCII_ROWS, ASCII_FS, ASCII_LH = 56, 44, 12, 15
 
 THEMES = {
     "dark": dict(bg="#161b22", text="#c9d1d9", key="#ffa657", value="#a5d6ff", cc="#616e7f"),
@@ -104,28 +104,33 @@ STATS = github_stats()
 
 INFO = [
     ("raw", header("nikola@milosevic")),
-    ("row", kv(["OS"], "macOS", W)),
+    ("row", kv(["Status"], "Open to full-time roles · Graz / Remote", W)),
     ("row", kv(["Uptime"], uptime(), W, "age_data")),
-    ("row", kv(["Host"], "NextPixel, Graz, Austria", W)),
+    ("row", kv(["Host"], "Graz, Austria", W)),
     ("row", kv(["Kernel"], "Full-Stack Software Engineer", W)),
-    ("row", kv(["Tools"], "Claude Code, Git, Figma, n8n", W)),
+    ("row", kv(["Experience"], "NextPixel, Rabensteiner Engineering", W)),
+    ("row", kv(["Education"], "BSc Health Informatics, FH JOANNEUM", W)),
     ("row", ""),
     ("row", kv(["Languages", "Programming"], "TypeScript, JavaScript, Python", W)),
     ("row", kv(["Languages", "Computer"], "HTML, CSS, SQL, JSON", W)),
     ("row", kv(["Languages", "Real"], "Serbian, German (C1+), English", W)),
     ("row", ""),
     ("row", kv(["Stack", "Frontend"], "React, Next.js, Tailwind CSS", W)),
-    ("row", kv(["Stack", "Backend"], "Node.js, NestJS, Python, Flask", W)),
+    ("row", kv(["Stack", "Backend"], "Node.js, NestJS, Flask, PostgreSQL", W)),
     ("row", kv(["Stack", "Mobile"], "React Native, Expo", W)),
-    ("row", kv(["Stack", "Data"], "PostgreSQL, Supabase, Prisma", W)),
-    ("row", kv(["Stack", "Cloud"], "Docker, Cloud Run, Vercel", W)),
-    ("row", kv(["Interests"], "AI, workflow automation", W)),
+    ("row", kv(["Stack", "Cloud"], "Docker, Cloud Run, Vercel, Supabase", W)),
+    ("row", kv(["Stack", "AI"], "OpenAI API, RAG, n8n", W)),
+    ("row", kv(["Tools"], "Claude Code, Git, Figma, Stripe", W)),
+    (None, None),
+    ("raw", header("- Projects")),
+    ("row", kv(["Forecast Engine"], "forecast-engine.com", W)),
+    ("row", kv(["AddMemories"], "dodajuspomenu.com", W)),
+    ("row", kv(["Termin"], "terminonlineapp.com", W)),
+    ("row", kv(["Servisna Knjižica"], "servisnaknjizica.app", W)),
     (None, None),
     ("raw", header("- Contact")),
-    ("row", kv(["Email", "Personal"], "nmil32@icloud.com", W)),
-    ("row", kv(["Email", "Work"], "nikola@nextpixel.dev", W)),
+    ("row", kv(["Email"], "nikola@nextpixel.dev", W)),
     ("row", kv(["Web"], "nextpixel.dev", W)),
-    ("row", kv(["GitHub"], "stpauli98", W)),
     (None, None),
     ("raw", header("- GitHub Stats")),
 ]
@@ -135,14 +140,13 @@ def half(keys, value, width, vid):
     return kv(keys, value, width, vid)
 
 
-L = 31  # sirina lijeve polovine statistike, ukljucujuci '. '
+L = 29  # sirina lijeve polovine statistike, ukljucujuci '. '
 R = W - L - len(" | ") + len(". ")
 INFO += [
     ("row", half(["Repos"], f"{STATS['repos']} {{Public: {STATS['public']}}}", L, "repo_data")
-            + " | " + half(["Contributed"], f"{STATS['contributed']:,}", R, "contrib_data")),
-    ("row", half(["Commits"], f"{STATS['commits']:,}", L, "commit_data")
-            + " | " + half(["Pull Requests"], f"{STATS['prs']:,}", R, "pr_data")),
-    ("row", kv(["Contributions", str(date.today().year)], f"{STATS['year']:,}", W, "year_data")),
+            + " | " + half(["Commits"], f"{STATS['commits']:,}", R, "commit_data")),
+    ("row", half(["Pull Requests"], f"{STATS['prs']:,}", L, "pr_data")
+            + " | " + half(["Contributions", str(date.today().year)], f"{STATS['year']:,}", R, "year_data")),
 ]
 
 

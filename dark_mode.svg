@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1026px" height="590px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1026px" height="695px" font-size="16px">
 <style>
 @font-face {
 src: local('Consolas'), local('Consolas Bold');
@@ -13,72 +13,82 @@ size-adjust: 109%;
 .cc {fill: #616e7f;}
 text, tspan {white-space: pre;}
 </style>
-<rect width="1026px" height="590px" fill="#161b22" rx="15"/>
+<rect width="1026px" height="695px" fill="#161b22" rx="15"/>
 <text x="15" y="30" fill="#c9d1d9" font-size="12px" class="ascii">
 <tspan x="15" y="30"></tspan>
 <tspan x="15" y="45"></tspan>
-<tspan x="15" y="60">                    kMli|r *ktr</tspan>
-<tspan x="15" y="75">                 *r!&#x27;&#x27;.&#x27;``,&#x27;&#x27;`&#x27;,rtm</tspan>
-<tspan x="15" y="90">                j::..............&#x27;,!l</tspan>
-<tspan x="15" y="105">              ki;..&#x27;`;:!||i!!;:,&#x27;....!*</tspan>
-<tspan x="15" y="120">            rl`&#x27;.;rkmMMM%%MMMmm*tl;.&#x27;`;M</tspan>
-<tspan x="15" y="135">            :.&#x27;`t%H%%%%%%%%%MMMmmmm|.&#x27;&#x27;:*</tspan>
-<tspan x="15" y="150">           t&#x27;`&#x27;rH%%HH%%%%%%%%%MMmmkk;...;</tspan>
-<tspan x="15" y="165">           ..&#x27;;m%%HH#HH%%%%%%%%MMMmkt`..,</tspan>
-<tspan x="15" y="180">           ,..iM%%%Mmm%HHHHHM*ljjlr*mj..;</tspan>
-<tspan x="15" y="195">           |..t#m***t*kM%H%krrkktrrl*m`.!H</tspan>
-<tspan x="15" y="210">            ,.rH*kt*liitm%%r|ltljjjrrM!.lk</tspan>
-<tspan x="15" y="225">           %Mi|Hmm*k**kmM%%krrkkmkkk*mjjmj</tspan>
-<tspan x="15" y="240">           mm@rM%M%%%HH%%HH%mt*%%%MmmMtr**</tspan>
-<tspan x="15" y="255">            MHMmHHHHH%%%MHHMr*rmHHMMmMt*rm</tspan>
-<tspan x="15" y="270">             M%mHHHH%MMmil|!:,iltM%mkMr*m</tspan>
-<tspan x="15" y="285">              H*H%HM*ijjiri|ti!!;r#kkmt</tspan>
-<tspan x="15" y="300">               kMHHH*imMM%MMm**M*kkrk**</tspan>
-<tspan x="15" y="315">                t%MMtrmMMkr*kmmr!!;|*l</tspan>
-<tspan x="15" y="330">                kirlil*kk**t*tr|:&#x27;,!,*</tspan>
-<tspan x="15" y="345">                 |:`,!!jklrlij;:`&#x27;&#x27;,i</tspan>
-<tspan x="15" y="360">                %H*j:&#x27;&#x27;``,,```&#x27;.&#x27;`|tm</tspan>
-<tspan x="15" y="375">              mir#H#%m*lj|::;;ijr*k*Mrj</tspan>
-<tspan x="15" y="390">           **ji|i@%HHHH#####HMmmmmmkk*&#x27;!j</tspan>
-<tspan x="15" y="405">       t!``,!!!!`r@%###HHH#HmmmM%%Mt#j`!:;!|lr</tspan>
-<tspan x="15" y="420"> tljji|:```;|!;;;:k@M%#@@#HMM%H#HMkH#.`,,::``,,;ilt</tspan>
-<tspan x="15" y="435">::;:!;:,,&#x27;`i|!!;;|;m@#MM%H#####HM%#@|.,`,:;!,;!;!!!|ij</tspan>
-<tspan x="15" y="450">:::;::,,`&#x27;&#x27;::;!;;:|:M@@mkMkm%#H%%*Mm.:,,:::::,:::;!!;;</tspan>
-<tspan x="15" y="465">:::;;;::,,,::::;;:;|;#@lm#H%MH%HH*#:&#x27;:`,,:`::::;;;!!||</tspan>
-<tspan x="15" y="480">,,::::,,,`;!:!:::;;!|iMtH@@###@@m#m`!::,,`,:;,;!;;;!!!</tspan>
-<tspan x="15" y="495">,:::;,,,,`,:;;|!;;!!|!jMH@@#@@@HM@j!!;::,:::::!:::::;;</tspan>
-<tspan x="15" y="510">:;!!!:;;;;!;;!||;:;;;!;*M@@@@@@m#M|::;::;!;;:|;:;;::;!</tspan>
-<tspan x="15" y="525">,;;;;::::;!!;:!;!::;!!!|M#@@@@#M#k:::::,;;;:||!;!!;;|;</tspan>
-<tspan x="15" y="540">,::;:::::;;;!:;!;!!!!!i;r@@@@@M%#l:;::::;;::!!;;;;:;:.</tspan>
-<tspan x="15" y="555">:!;;:::;:!!!;;:;|||!;;!!;H@@@@m@%;!!;;!!!!:;:;;;;;;;&#x27;.</tspan>
-<tspan x="15" y="570">&#x27;!|!;;;!;|||!;!;;!;!;:;|,t@@@@M@*:;;;;||i;;;;;;!;;!:..</tspan>
+<tspan x="15" y="60">                        tr</tspan>
+<tspan x="15" y="75">                   ril,,;:|r!|i::r%k</tspan>
+<tspan x="15" y="90">                lr:&#x27;.....&#x27;.&#x27;..&#x27;&#x27;.&#x27;!ljk*</tspan>
+<tspan x="15" y="105">               i`;...................,;l</tspan>
+<tspan x="15" y="120">            %t|;&#x27;...&#x27;:,,|;||;;::,`......|r</tspan>
+<tspan x="15" y="135">          lM|``&#x27;&#x27;;jtkmmmMMMMmmkkktli:&#x27;.&#x27;`,M</tspan>
+<tspan x="15" y="150">          |`&#x27;`.!k%%%MMM%%%MMMmMmmkkkkj&#x27;.`&#x27;!r</tspan>
+<tspan x="15" y="165">          ,`&#x27;.i%%M%%%%%%%%%%%MMMMmmkkkj....:*</tspan>
+<tspan x="15" y="180">         j.`&#x27;:mM%%%%%%%M%%%%%MMMMmmmk**;....j</tspan>
+<tspan x="15" y="195">         ...`jMM%%%HHH%%%%%%%%%%MMMMmk*r`...i</tspan>
+<tspan x="15" y="210">         ,..&#x27;rMM%%%MmmM%%H%%%M*liiijlt*kj.&#x27;&#x27;l</tspan>
+<tspan x="15" y="225">         !&#x27;.`%%M*trrrtkM%%%MM*r*kk*trll*m`..*%</tspan>
+<tspan x="15" y="240">         m&#x27;.&#x27;%%tt*kktllrkM%Mr!irrjijilrrM|.&#x27;*M</tspan>
+<tspan x="15" y="255">          t;.%Mkmrlriijrmm%M*jlr*tttllttmr&#x27;*rr</tspan>
+<tspan x="15" y="270">         km#!rHmmmMMMMMMMM%Mm*r*mmmmmmkkmrimtl</tspan>
+<tspan x="15" y="285">         Mt@#l%M%M%%%%%MM%H%%m*r*%%MMmmkM*rr*k</tspan>
+<tspan x="15" y="300">          m%%kM%%HHHHMM%MMH%Mrr*lm%%MMmkmtt*rm</tspan>
+<tspan x="15" y="315">           m%mmH%%%HMM%%tjtii;&#x27;|lt*M%MkkMtrmk</tspan>
+<tspan x="15" y="330">            HM*H%%%k*tlji:l,`j|::::i%%*kMtt</tspan>
+<tspan x="15" y="345">              tH%HMMj:t**kMmmm*rrtrrHkt*ml</tspan>
+<tspan x="15" y="360">              *kH%%HttMM%Mm*k***kmrrtilktt</tspan>
+<tspan x="15" y="375">               lMmmkjlkmMk*rtkkmki;:::jrj</tspan>
+<tspan x="15" y="390">               m!ljjiltkk*t*r*tll!:&#x27;`:!`m</tspan>
+<tspan x="15" y="405">                |,:,:|!i**jtlij|;:,&#x27;&#x27;&#x27;,i</tspan>
+<tspan x="15" y="420">               H%t|:&#x27;.&#x27;,;;!!;:;,&#x27;...`!tk</tspan>
+<tspan x="15" y="435">              rrH%HMti!:&#x27;`.....&#x27;,,!jt**mr</tspan>
+<tspan x="15" y="450">            rj!j#M%%HHH%%M*tttt***kkk*kmt`j</tspan>
+<tspan x="15" y="465">       tjiji|j|:#%%HH%%%%H###HMmkkmmmm*mk&#x27;;;!*</tspan>
+<tspan x="15" y="480">   kr;`&#x27;`,||!;!,!#%%##HHH%HH%mkmm%%%Mkr@|&#x27;;;;:::|il</tspan>
+<tspan x="15" y="495">ij||;,```;!!;;;;:i@%m%#@##H%MM%%HHH%k*#%.`,,:::`&#x27;,,,:|jr</tspan>
+<tspan x="15" y="510">;!;;:,,&#x27;`||!;!;;|;l@#%kk%H##HHH##HMm%#@;.```,::;,,!;;!!!</tspan>
+<tspan x="15" y="525">;::,`,`.,!!!!!;;;!:r@@@H*kkm%HH#H%M%k@t.,:`,,::;;`;;;;;!</tspan>
+<tspan x="15" y="540">;::,,,`&#x27;&#x27;`,,;;;:,;i:*@@%l@%k*kHHMMM*l@`&#x27;,,,,::`,,,:,:::;</tspan>
+<tspan x="15" y="555">:;::,:,,;;;;:::;:,;i:M@ltMH@#%H%H#Ht@r.::,,,,,,;:;,:;;;;</tspan>
+<tspan x="15" y="570">,:,,,,,`:!,;;:::;;;!i!mr%#@#HH@#@@k%@:;;,:,,,`,,::,;;;;;</tspan>
+<tspan x="15" y="585">;:,,,,,,,:;:!!!;;!!;!!iMM##@##@#@%m@*;|;::,,,::,:,!;::::</tspan>
+<tspan x="15" y="600">;;:::::;!:;!!||;::;;;|:tm%@@@@#@@k#%l:;:;:::;!;;,;!::;;:</tspan>
+<tspan x="15" y="615">;;:::;:;|!;:!;!;:,;;;!!;Mm@@@@@@%m#mi::;:,,,;;;;;|!!;!!;</tspan>
+<tspan x="15" y="630">;:::::,;;;!::!;;;::;!!i:l%@@@@@@mHHm,:::,:,:;:;,||!!;;;;</tspan>
+<tspan x="15" y="645">;::;:::;;;!:::!!!!!!!!||:k@@@@@@*#%r,!;::::;;!,;;;;;;:;:</tspan>
+<tspan x="15" y="660">;:;:;;:!!!!:;,;||!!;::!|,i#@@@@#*@M;;!;;;!!!!;:!:;;;;:;;</tspan>
+<tspan x="15" y="675">;;;;!;;|||!;!!;;!;;!::;!!,m@@@@%M@*,;:;;;!!||:;;;:!;!;;!</tspan>
 </text>
 <text x="430" y="30" fill="#c9d1d9">
 <tspan x="430" y="30">nikola@milosevic</tspan> -———————————————————————————————————————-—-
-<tspan x="430" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ................................................ </tspan><tspan class="value">macOS</tspan>
+<tspan x="430" y="50" class="cc">. </tspan><tspan class="key">Status</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">Open to full-time roles · Graz / Remote</tspan>
 <tspan x="430" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots"> ..................... </tspan><tspan class="value" id="age_data">27 years, 11 months, 14 days</tspan>
-<tspan x="430" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">NextPixel, Graz, Austria</tspan>
+<tspan x="430" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> ...................................... </tspan><tspan class="value">Graz, Austria</tspan>
 <tspan x="430" y="110" class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">Full-Stack Software Engineer</tspan>
-<tspan x="430" y="130" class="cc">. </tspan><tspan class="key">Tools</tspan>:<tspan class="cc"> ...................... </tspan><tspan class="value">Claude Code, Git, Figma, n8n</tspan>
-<tspan x="430" y="150" class="cc">. </tspan>
-<tspan x="430" y="170" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">TypeScript, JavaScript, Python</tspan>
-<tspan x="430" y="190" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Computer</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">HTML, CSS, SQL, JSON</tspan>
-<tspan x="430" y="210" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">Serbian, German (C1+), English</tspan>
-<tspan x="430" y="230" class="cc">. </tspan>
-<tspan x="430" y="250" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Frontend</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">React, Next.js, Tailwind CSS</tspan>
-<tspan x="430" y="270" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Backend</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">Node.js, NestJS, Python, Flask</tspan>
-<tspan x="430" y="290" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Mobile</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">React Native, Expo</tspan>
-<tspan x="430" y="310" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Data</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">PostgreSQL, Supabase, Prisma</tspan>
-<tspan x="430" y="330" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Cloud</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Docker, Cloud Run, Vercel</tspan>
-<tspan x="430" y="350" class="cc">. </tspan><tspan class="key">Interests</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">AI, workflow automation</tspan>
-<tspan x="430" y="390">- Contact</tspan> -——————————————————————————————————————————————-—-
-<tspan x="430" y="410" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Personal</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">nmil32@icloud.com</tspan>
-<tspan x="430" y="430" class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Work</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">nikola@nextpixel.dev</tspan>
-<tspan x="430" y="450" class="cc">. </tspan><tspan class="key">Web</tspan>:<tspan class="cc"> ....................................... </tspan><tspan class="value">nextpixel.dev</tspan>
-<tspan x="430" y="470" class="cc">. </tspan><tspan class="key">GitHub</tspan>:<tspan class="cc"> ........................................ </tspan><tspan class="value">stpauli98</tspan>
-<tspan x="430" y="510">- GitHub Stats</tspan> -—————————————————————————————————————————-—-
-<tspan x="430" y="530" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc" id="repo_data_dots"> ...... </tspan><tspan class="value" id="repo_data">58 {Public: 21}</tspan> | <tspan class="key">Contributed</tspan>:<tspan class="cc" id="contrib_data_dots"> ........... </tspan><tspan class="value" id="contrib_data">5</tspan>
-<tspan x="430" y="550" class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc" id="commit_data_dots"> .............. </tspan><tspan class="value" id="commit_data">5,162</tspan> | <tspan class="key">Pull Requests</tspan>:<tspan class="cc" id="pr_data_dots"> ....... </tspan><tspan class="value" id="pr_data">349</tspan>
-<tspan x="430" y="570" class="cc">. </tspan><tspan class="key">Contributions</tspan>.<tspan class="key">2026</tspan>:<tspan class="cc" id="year_data_dots"> ................................ </tspan><tspan class="value" id="year_data">4,213</tspan>
+<tspan x="430" y="130" class="cc">. </tspan><tspan class="key">Experience</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">NextPixel, Rabensteiner Engineering</tspan>
+<tspan x="430" y="150" class="cc">. </tspan><tspan class="key">Education</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">BSc Health Informatics, FH JOANNEUM</tspan>
+<tspan x="430" y="170" class="cc">. </tspan>
+<tspan x="430" y="190" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Programming</tspan>:<tspan class="cc"> .... </tspan><tspan class="value">TypeScript, JavaScript, Python</tspan>
+<tspan x="430" y="210" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Computer</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">HTML, CSS, SQL, JSON</tspan>
+<tspan x="430" y="230" class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">Serbian, German (C1+), English</tspan>
+<tspan x="430" y="250" class="cc">. </tspan>
+<tspan x="430" y="270" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Frontend</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">React, Next.js, Tailwind CSS</tspan>
+<tspan x="430" y="290" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Backend</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">Node.js, NestJS, Flask, PostgreSQL</tspan>
+<tspan x="430" y="310" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Mobile</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">React Native, Expo</tspan>
+<tspan x="430" y="330" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">Cloud</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">Docker, Cloud Run, Vercel, Supabase</tspan>
+<tspan x="430" y="350" class="cc">. </tspan><tspan class="key">Stack</tspan>.<tspan class="key">AI</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">OpenAI API, RAG, n8n</tspan>
+<tspan x="430" y="370" class="cc">. </tspan><tspan class="key">Tools</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Claude Code, Git, Figma, Stripe</tspan>
+<tspan x="430" y="410">- Projects</tspan> -—————————————————————————————————————————————-—-
+<tspan x="430" y="430" class="cc">. </tspan><tspan class="key">Forecast Engine</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">forecast-engine.com</tspan>
+<tspan x="430" y="450" class="cc">. </tspan><tspan class="key">AddMemories</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">dodajuspomenu.com</tspan>
+<tspan x="430" y="470" class="cc">. </tspan><tspan class="key">Termin</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">terminonlineapp.com</tspan>
+<tspan x="430" y="490" class="cc">. </tspan><tspan class="key">Servisna Knjižica</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">servisnaknjizica.app</tspan>
+<tspan x="430" y="530">- Contact</tspan> -——————————————————————————————————————————————-—-
+<tspan x="430" y="550" class="cc">. </tspan><tspan class="key">Email</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">nikola@nextpixel.dev</tspan>
+<tspan x="430" y="570" class="cc">. </tspan><tspan class="key">Web</tspan>:<tspan class="cc"> ....................................... </tspan><tspan class="value">nextpixel.dev</tspan>
+<tspan x="430" y="610">- GitHub Stats</tspan> -—————————————————————————————————————————-—-
+<tspan x="430" y="630" class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc" id="repo_data_dots"> .... </tspan><tspan class="value" id="repo_data">58 {Public: 21}</tspan> | <tspan class="key">Commits</tspan>:<tspan class="cc" id="commit_data_dots"> ............. </tspan><tspan class="value" id="commit_data">1,350</tspan>
+<tspan x="430" y="650" class="cc">. </tspan><tspan class="key">Pull Requests</tspan>:<tspan class="cc" id="pr_data_dots"> ........ </tspan><tspan class="value" id="pr_data">158</tspan> | <tspan class="key">Contributions</tspan>.<tspan class="key">2026</tspan>:<tspan class="cc" id="year_data_dots"> .. </tspan><tspan class="value" id="year_data">1,389</tspan>
 </text>
 </svg>
