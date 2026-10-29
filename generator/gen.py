@@ -1,8 +1,18 @@
-import subprocess, sys
+"""Pravi dark_mode.svg i light_mode.svg.
+
+ASCII portret se cita iz ascii_dark.txt i ascii_light.txt. Kad promijenis portrait.png,
+napravi ih ponovo (treba Pillow i numpy):
+    python ascii.py portrait.png 54 37 dark > ascii_dark.txt
+    python ascii.py portrait.png 54 37 light > ascii_light.txt
+
+GitHub statistika se cita uzivo preko GraphQL API-ja. Token se uzima iz GH_TOKEN,
+a lokalno iz `gh auth token`.
+"""
+import json, os, subprocess, urllib.request
 from datetime import date
 from html import escape
 
-import os
+USER = "stpauli98"
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
 
@@ -54,6 +64,44 @@ def header(title):
     return escape(title) + " -" + "—" * fill + "-—-"
 
 
+def graphql(query):
+    token = os.environ.get("GH_TOKEN") or subprocess.run(
+        ["gh", "auth", "token"], capture_output=True, text=True, check=True).stdout.strip()
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query}).encode(),
+        headers={"Authorization": f"bearer {token}"})
+    res = json.load(urllib.request.urlopen(req))
+    if "errors" in res:
+        raise SystemExit(res["errors"])
+    return res["data"]["user"]
+
+
+def github_stats():
+    u = graphql(f"""{{ user(login: "{USER}") {{
+        repositories(ownerAffiliations: OWNER) {{ totalCount }}
+        public: repositories(ownerAffiliations: OWNER, privacy: PUBLIC) {{ totalCount }}
+        repositoriesContributedTo(contributionTypes: [COMMIT, PULL_REQUEST, REPOSITORY]) {{ totalCount }}
+        contributionsCollection {{ contributionYears }}
+    }} }}""")
+    years = u["contributionsCollection"]["contributionYears"]
+    per_year = graphql("{ user(login: \"%s\") { %s } }" % (USER, " ".join(
+        f'y{y}: contributionsCollection(from: "{y}-01-01T00:00:00Z", to: "{y}-12-31T23:59:59Z") '
+        "{ totalCommitContributions totalPullRequestContributions contributionCalendar { totalContributions } }"
+        for y in years)))
+    this_year = per_year.get(f"y{date.today().year}")
+    return {
+        "repos": u["repositories"]["totalCount"],
+        "public": u["public"]["totalCount"],
+        "contributed": u["repositoriesContributedTo"]["totalCount"],
+        "commits": sum(v["totalCommitContributions"] for v in per_year.values()),
+        "prs": sum(v["totalPullRequestContributions"] for v in per_year.values()),
+        "year": this_year["contributionCalendar"]["totalContributions"] if this_year else 0,
+    }
+
+
+STATS = github_stats()
+
 INFO = [
     ("raw", header("nikola@milosevic")),
     ("row", kv(["OS"], "macOS", W)),
@@ -90,18 +138,17 @@ def half(keys, value, width, vid):
 L = 31  # sirina lijeve polovine statistike, ukljucujuci '. '
 R = W - L - len(" | ") + len(". ")
 INFO += [
-    ("row", half(["Repos"], "58 {Public: 21}", L, "repo_data") + " | " + half(["Contributed"], "5", R, "contrib_data")),
-    ("row", half(["Commits"], "1,346", L, "commit_data") + " | " + half(["Pull Requests"], "158", R, "pr_data")),
-    ("row", kv(["Contributions", "2026"], "1,384", W, "year_data")),
+    ("row", half(["Repos"], f"{STATS['repos']} {{Public: {STATS['public']}}}", L, "repo_data")
+            + " | " + half(["Contributed"], f"{STATS['contributed']:,}", R, "contrib_data")),
+    ("row", half(["Commits"], f"{STATS['commits']:,}", L, "commit_data")
+            + " | " + half(["Pull Requests"], f"{STATS['prs']:,}", R, "pr_data")),
+    ("row", kv(["Contributions", str(date.today().year)], f"{STATS['year']:,}", W, "year_data")),
 ]
 
 
 def build(theme):
     c = THEMES[theme]
-    art = subprocess.run(
-        [sys.executable, "-I", f"{HERE}/ascii.py", f"{HERE}/portrait.png",
-         str(ASCII_COLS), str(ASCII_ROWS), theme],
-        capture_output=True, text=True, check=True).stdout.splitlines()
+    art = open(f"{HERE}/ascii_{theme}.txt").read().splitlines()
     art += [""] * (ASCII_ROWS - len(art))
     height = 30 + (ASCII_ROWS - 1) * ASCII_LH + 20
     info_h = 30 + (len(INFO) - 1) * 20 + 20
