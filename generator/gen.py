@@ -90,7 +90,7 @@ def half(keys, value, width, vid):
 L = 31  # sirina lijeve polovine statistike, ukljucujuci '. '
 R = W - L - len(" | ") + len(". ")
 INFO += [
-    ("row", half(["Repos"], "57 {Public: 20}", L, "repo_data") + " | " + half(["Contributed"], "5", R, "contrib_data")),
+    ("row", half(["Repos"], "58 {Public: 21}", L, "repo_data") + " | " + half(["Contributed"], "5", R, "contrib_data")),
     ("row", half(["Commits"], "1,346", L, "commit_data") + " | " + half(["Pull Requests"], "158", R, "pr_data")),
     ("row", kv(["Contributions", "2026"], "1,384", W, "year_data")),
 ]
